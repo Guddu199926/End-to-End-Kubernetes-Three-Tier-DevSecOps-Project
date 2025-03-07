@@ -1,9 +1,9 @@
 terraform {
   backend "s3" {
-    bucket         = "ran-dom-buck"
+    bucket         = "testingonlybucketfor"
     region         = "us-east-1"
-    key            = "random.pem"
-    dynamodb_table = "ran-dom-table"
+    key            = "terraform/state.tfstate"
+    dynamodb_table = "UsersTable"
     encrypt        = true
   }
   required_version = ">=0.13.0"
